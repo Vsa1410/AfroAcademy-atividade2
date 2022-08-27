@@ -1,0 +1,119 @@
+.main-body{
+    display:flex;
+    
+    width: 100%;
+    height: 100%;
+    
+}
+.text{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-width: 300px;
+    flex: 2;
+    padding-bottom: 300px;
+}
+.img{
+    
+    flex: 1;
+    justify-items: center;
+    
+    min-width: 300px;
+}
+img{
+    width: 100%;
+    border-radius: 12px;
+    
+
+}
+h2{
+    font-weight: bolder;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    background-color: rgb(255, 255, 255);
+}
+.menu-itens li {
+    list-style: none;
+    display: inline;
+    margin:2%;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+}
+.menu-itens li:hover{
+    
+    color: rgb(58, 57, 57);
+    
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5% 2% 0 0 ;
+    
+}
+.menu-itens{
+    width:100%;
+    margin-right: 50px;
+    justify-content: flex-end;
+}
+.main-text{
+    display:grid;
+    align-items: center;
+    padding: 20% 10% 0 5% ;
+    
+}
+.buttons{
+    display: flex;
+   justify-content: space-around;
+   margin: 10% 0 0 0;
+   width: 400px ;
+
+}
+.download{
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 40%;
+    border-radius: 8px;
+    border-color: transparent;
+    font-size: large;
+    cursor: pointer;
+}
+.sign-in{
+    color: black;
+    background-color: white;
+    height: 50px;
+    width: 40%;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+    font-size: large;
+    cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+    .main-body{
+        display: grid;
+    }
+    .menu{
+        width: 100%;
+    }
+    .img {
+        width:100%;
+        float:right;
+        max-height: 600px;
+
+    }
+    .text {
+        margin-top:0;
+        float: left;
+        padding-bottom: 400px;
+    }
+    .menu-itens{
+        margin: 0;
+        justify-content: center;
+    }
+}
